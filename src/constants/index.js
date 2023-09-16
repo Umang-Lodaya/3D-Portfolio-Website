@@ -25,7 +25,8 @@ import {
   stock,
   neural,
   customer,
-  recommendation
+  recommendation,
+  github
 } from "../assets";
 
 export const navLinks = [
@@ -280,4 +281,27 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+const profileLinks = [
+  {
+    name: 'LinkedIn',
+    icon: github,
+    website: 'https://www.linkedin.com/in/umang-lodaya-074496242/'
+  },
+  {
+    name: "LeetCode",
+    icon: python,
+    website: "https://www.leetcode.com/UmangLodaya"
+  },
+  {
+    name: 'Github',
+    icon: github,
+    website: 'https://www.github.com/Umang-Lodaya'
+  },
+  {
+    name: 'Kaggle',
+    icon: github,
+    website: 'https://www.kaggle.com/umanglodaya'
+  },
+]
+
+export { services, technologies, experiences, testimonials, projects, profileLinks };

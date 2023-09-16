@@ -1,10 +1,39 @@
-import {Tilt} from "react-tilt";
+import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { profileLinks, services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
+
+const ProfileCard = ({
+  index,
+  name,
+  icon,
+  website,
+}) => {
+  return (
+    <Tilt>
+      <motion.div
+        variants={fadeIn("up", index * 0.5, 0.75)}
+        className='w-max shadow-card'
+      >
+        <div className='border-purple-900 border-4 p-3 rounded-2xl w-max h-max flex cursor-pointer justify-center items-center gap-3 hover:bg-tertiary ease-in-out transition-all duration-[800]'
+          onClick={() => window.open(website, "_blank")}
+        >
+          <div className='relative black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'>
+            <img
+              src={icon}
+              alt=""
+              className='w-1/2 h-1/2 object-contain'
+            />
+          </div>
+          <h3 className='text-white font-bold text-[15px]'>{name}</h3>
+        </div>
+      </motion.div >
+    </Tilt>
+  );
+};
 
 const ServiceCard = ({ index, title, icon }) => (
   <Tilt className='xs:w-[250px] w-full'>
@@ -49,6 +78,12 @@ const About = () => {
         I&apos;m a skilled data analyst with experience in Python, and expertise in fields like Data Analysis, Artificial Intelligence, Machine Learning. I&apos;m a quick learner and collaborate closely with clients to
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let&apos;s work together to bring your ideas to life!
+
+        <div className="mt-5 flex flex-row flex-wrap justify-between gap-3">
+          {profileLinks.map((profile, index) => (
+            <ProfileCard key={`project-${index}`} {...profile} />
+          ))}
+        </div>
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10 justify-around'>
