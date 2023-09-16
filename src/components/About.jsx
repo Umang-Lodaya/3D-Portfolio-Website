@@ -25,7 +25,7 @@ const ProfileCard = ({
             <img
               src={icon}
               alt=""
-              className='w-1/2 h-1/2 object-contain'
+              className='w-4/6 h-4/6 object-contain'
             />
           </div>
           <h3 className='text-white font-bold text-[15px]'>{name}</h3>
@@ -79,7 +79,7 @@ const About = () => {
         create efficient, scalable, and user-friendly solutions that solve
         real-world problems. Let&apos;s work together to bring your ideas to life!
 
-        <div className="mt-5 flex flex-row flex-wrap justify-between gap-3">
+        <div className="mt-5 flex flex-row flex-wrap justify-normal gap-3">
           {profileLinks.map((profile, index) => (
             <ProfileCard key={`project-${index}`} {...profile} />
           ))}

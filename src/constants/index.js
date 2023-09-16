@@ -4,6 +4,12 @@ import {
   mobile,
   web,
 
+  hackerrank,
+  leetcode,
+  kaggle,
+  linkedin,
+  gfg,
+
   cpp,
   css,
   figma,
@@ -85,16 +91,16 @@ const technologies = [
     icon: cpp,
   },
   {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "HTML 5",
+    name: "HTML5",
     icon: html,
   },
   {
-    name: "CSS 3",
+    name: "CSS3",
     icon: css,
+  },
+  {
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Tailwind CSS",
@@ -121,11 +127,11 @@ const technologies = [
     icon: threejs,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "Figma",
     icon: figma,
   },
 ];
@@ -284,13 +290,8 @@ const projects = [
 const profileLinks = [
   {
     name: 'LinkedIn',
-    icon: github,
+    icon: linkedin,
     website: 'https://www.linkedin.com/in/umang-lodaya-074496242/'
-  },
-  {
-    name: "LeetCode",
-    icon: python,
-    website: "https://www.leetcode.com/UmangLodaya"
   },
   {
     name: 'Github',
@@ -298,9 +299,24 @@ const profileLinks = [
     website: 'https://www.github.com/Umang-Lodaya'
   },
   {
+    name: "LeetCode",
+    icon: leetcode,
+    website: "https://www.leetcode.com/UmangLodaya"
+  },
+  {
+    name: "Geeks for Geeks",
+    icon: gfg,
+    website: "https://auth.geeksforgeeks.org/user/umanglodaya"
+  },
+  {
     name: 'Kaggle',
-    icon: github,
+    icon: kaggle,
     website: 'https://www.kaggle.com/umanglodaya'
+  },
+  {
+    name: 'HackerRank',
+    icon: hackerrank,
+    website: 'https://www.hackerrank.com/UmangLodaya'
   },
 ]
 

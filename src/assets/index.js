@@ -7,6 +7,12 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import hackerrank from './hackerrank.png'
+import leetcode from './leetcode.png'
+import kaggle from './kaggle.png'
+import linkedin from './linkedin.png'
+import gfg from './gfg.png'
+
 import cpp from "./tech/cpp.png"
 import css from "./tech/css.png";
 import excel from "./tech/excel.png"
@@ -40,6 +46,12 @@ export {
   github,
   menu,
   close,
+
+  hackerrank,
+  leetcode,
+  kaggle,
+  linkedin,
+  gfg,
 
   cpp,
   css,
