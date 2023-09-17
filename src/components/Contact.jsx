@@ -35,20 +35,19 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    if (form.name.length != 0 || form.email.length != 0) {
-      emailjs
-        .send(
-          import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
-          import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
-          {
-            from_name: form.name,
-            to_name: "Umang Lodaya",
-            from_email: form.email,
-            to_email: "lodayaumang71@gmail.com",
-            message: form.message,
-          },
-          import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
-        )
+    if (form.name.length != 0 && form.email.length != 0) {
+      emailjs.send(
+        import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          to_name: "Umang Lodaya",
+          from_email: form.email,
+          to_email: "lodayaumang71@gmail.com",
+          message: form.message,
+        },
+        import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
+      )
         .then(
           () => {
             setLoading(false);
@@ -68,7 +67,7 @@ const Contact = () => {
           }
         );
     }
-    else if(form.name.length == 0 || form.email.length == 0){
+    else {
       setSent(true)
       setMessage("Please enter your name and email")
       setLoading(false)

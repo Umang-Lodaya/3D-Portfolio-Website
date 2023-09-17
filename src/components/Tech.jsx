@@ -11,7 +11,7 @@ const Tech = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={`${styles.sectionSubText} text-center`}>
-          What Technology I known so far
+          What Technologies I know so far
         </p>
       </motion.div>
       <div className='mt-10 flex flex-row flex-wrap justify-center gap-20'>
