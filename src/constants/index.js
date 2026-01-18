@@ -3,287 +3,49 @@ import {
   creator,
   mobile,
   web,
-
-  hackerrank,
+  linkedin,
+  github,
   leetcode,
   kaggle,
-  linkedin,
-  gfg,
-
-  cpp,
-  css,
-  figma,
   git,
-  html,
   java,
   javascript,
-  mongodb,
   mysql,
-  nodejs,
   python,
   reactjs,
   tailwind,
-  threejs,
-
+  docker,
+  ansible,
+  jenkins,
+  k8,
+  linux,
+  springboot,
   gochanakya,
   suvidha,
+  bnp,
+} from '../assets';
 
-  stock,
-  neural,
-  customer,
-  recommendation,
-  github
-} from "../assets";
+import {
+  CalendarClock,
+  DatabaseZap,
+  ServerCog,
+  MessagesSquare,
+  ArrowLeftRight,
+  ChartLine,
+} from 'lucide-react';
 
 export const navLinks = [
   {
-    id: "about",
-    title: "About",
+    id: 'about',
+    title: 'About',
   },
   {
-    id: "work",
-    title: "Work",
+    id: 'work',
+    title: 'Work',
   },
   {
-    id: "contact",
-    title: "Contact",
-  },
-];
-
-const services = [
-  {
-    title: "Data Science Engineer",
-    icon: web,
-  },
-  {
-    title: "ML Engineer",
-    icon: creator,
-  },
-  {
-    title: "AI Engineer",
-    icon: backend,
-  },
-  {
-    title: "Data Analyst",
-    icon: mobile,
-  },
-  {
-    title: "Python Developer",
-    icon: creator,
-  },
-  {
-    title: "Web Developer",
-    icon: web,
-  },
-];
-
-const technologies = [
-  {
-    name: "Python",
-    icon: python,
-  },
-  {
-    name: "Java",
-    icon: java,
-  },
-  {
-    name: "C++",
-    icon: cpp,
-  },
-  {
-    name: "HTML5",
-    icon: html,
-  },
-  {
-    name: "CSS3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "MySQL",
-    icon: mysql,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "Git",
-    icon: git,
-  },
-  {
-    name: "Figma",
-    icon: figma,
-  },
-];
-
-const experiences = [
-  {
-    title: "Machine Learning Intern",
-    company_name: "Suvidha Foundation",
-    icon: suvidha,
-    iconBg: "#383E56",
-    date: "Feb 2023 - Mar 2023",
-    points: [
-      "I undertook a project centered on leveraging Natural Language Processing (NLP) to address the task of summarizing interconnected documents.",
-      "By utilizing Python and libraries such as NLTK, I developed algorithms that could comprehend and condense the content while retaining its essential meaning.",
-      "This tool had potential applications in various domains, including creating insightful summaries of articles on specific subjects.",
-      "Tech Stack: Python, NLP, Tensorflow."
-    ],
-  },
-  {
-    title: "Data Science Engineer",
-    company_name: "GoChanakya",
-    icon: gochanakya,
-    iconBg: "#E6DEDD",
-    date: "Jun 2023 - Present",
-    points: [
-      "Developed an Full Stack Website using Bubble.io for the company.",
-      "I undertook the responsibility of designing, developing, and testing individual modules, and worked on building a financial database for Equity Market with the functionalities for managing users' portfolios.",
-      "I developed statistical models leveraging deep learning techniques on historical data to enhance portfolio returns. ",
-      "Tech Stack: Python, REST API, Tensorflow, Bubble.io, MS Excel.",
-    ],
-  }
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
-const projects = [
-  {
-    name: "Stock Market Trend Prediction",
-    description:
-      "Employs an intuitive user interface enabling dynamic stock searches, displaying real-time data visualization and diverse charts illustrating stock fluctuations",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tensorflow",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Streamlit",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "REST API",
-        color: "red-text-gradient",
-      },
-    ],
-    image: stock,
-    source_code_link: "https://umang-lodaya-stock-market-trend-prediction.streamlit.app/",
-  },
-  {
-    name: "Neural Network Visualizer",
-    description:
-      "An interactive tool employs the MNIST dataset and Streamlit to showcase the inner workings of neural networks, making complex architectures and training processes accessible.",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Tensorflow",
-        color: "green-text-gradient",
-      }
-    ],
-    image: neural,
-    source_code_link: "https://umang-lodaya-neural-network-visualizer.streamlit.app/",
-  },
-  {
-    name: "Customer Segmentation",
-    description:
-      "Built a project on analyzing customer buying behavior in the banking sector, focusing on term deposit subscriptions for a Portuguese Bank.",
-    tags: [
-      {
-        name: "Python",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "SkLearn",
-        color: "green-text-gradient",
-      },
-      {
-        name: "NumPy",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Pandas",
-        color: "red-text-gradient",
-      },
-    ],
-    image: customer,
-    source_code_link: "https://github.com/Umang-Lodaya/ML-Mini-Project",
-  },
-  {
-    name: "Movie Recommedation System",
-    description:
-      "Provide users with personalized movie recommendations based on their ratings and preferences",
-    tags: [
-      {
-        name: "Java",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JSP",
-        color: "green-text-gradient",
-      },
-      {
-        name: "JSF",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "REST API",
-        color: "red-text-gradient",
-      },
-    ],
-    image: recommendation,
-    source_code_link: "https://www.dukelearntoprogram.com//capstone/recommender.php?id=sBAwi8PoaupCgm",
+    id: 'contact',
+    title: 'Contact',
   },
 ];
 
@@ -291,33 +53,218 @@ const profileLinks = [
   {
     name: 'LinkedIn',
     icon: linkedin,
-    website: 'https://www.linkedin.com/in/umang-lodaya-074496242/'
+    website: 'https://www.linkedin.com/in/umang-lodaya/',
   },
   {
     name: 'Github',
     icon: github,
-    website: 'https://www.github.com/Umang-Lodaya'
+    website: 'https://www.github.com/Umang-Lodaya',
   },
   {
-    name: "LeetCode",
+    name: 'LeetCode',
     icon: leetcode,
-    website: "https://www.leetcode.com/UmangLodaya"
-  },
-  {
-    name: "Geeks for Geeks",
-    icon: gfg,
-    website: "https://auth.geeksforgeeks.org/user/umanglodaya"
+    website: 'https://leetcode.com/u/UmangLodaya/',
   },
   {
     name: 'Kaggle',
     icon: kaggle,
-    website: 'https://www.kaggle.com/umanglodaya'
+    website: 'https://www.kaggle.com/umanglodaya',
+  },
+];
+
+const services = [
+  {
+    title: 'Software Engineer',
+    icon: creator,
   },
   {
-    name: 'HackerRank',
-    icon: hackerrank,
-    website: 'https://www.hackerrank.com/UmangLodaya'
+    title: 'DevOps Engineer',
+    icon: backend,
   },
-]
+  {
+    title: 'AI / ML Engineer',
+    icon: mobile,
+  },
+  {
+    title: 'Data Engineer & Analyst',
+    icon: web,
+  },
+];
 
-export { services, technologies, experiences, testimonials, projects, profileLinks };
+const experiences = [
+  {
+    title: 'Software Engineer',
+    company_name: 'BNP Paribas ISPL',
+    icon: bnp,
+    iconBg: '#E6DEDD',
+    date: 'Jun 2024 - Present',
+    points: [
+      'Built and maintained DEV environment from scratch to support QA automation, ensuring isolation from development workflows and improving release reliability.',
+      'Acted as Release Manager for multiple critical releases, coordinating deployments, validations, and rollback readiness across environments.',
+      'Designated as Local DevOps Champion for the team; drove adoption of Jenkins, Docker, and Kubernetes through internal enablement and hands-on support.',
+      'Developed and maintained internal applications including CDUS, contributing to both feature development and production support.',
+      'Led MQ migration as part of Project Commission, ensuring minimal disruption and compliance with enterprise standards.',
+      'Contributed to AI initiatives by building RASA-based FAQ chatbots and experimenting with AI-powered SQL generation for internal use cases.',
+      'Provided L3-level production support and actively collaborated with cross-functional teams during incidents and onshore stakeholder visits.',
+      'Tech Stack: Java, Python, Spring Boot, Docker, Ansible, Jenkins, AI.',
+    ],
+  },
+  {
+    title: 'Data Science Engineer',
+    company_name: 'GoChanakya',
+    icon: gochanakya,
+    iconBg: '#E6DEDD',
+    date: 'Jun 2023 - May 2024',
+    points: [
+      'Developed an Full Stack Website using Bubble.io for the company.',
+      "I undertook the responsibility of designing, developing, and testing individual modules, and worked on building a financial database for Equity Market with the functionalities for managing users' portfolios.",
+      'I developed statistical models leveraging deep learning techniques on historical data to enhance portfolio returns. ',
+      'Tech Stack: Python, REST API, Tensorflow, Bubble.io, MS Excel.',
+    ],
+  },
+  {
+    title: 'Machine Learning Intern',
+    company_name: 'Suvidha Foundation',
+    icon: suvidha,
+    iconBg: '#383E56',
+    date: 'Feb 2023 - Mar 2023',
+    points: [
+      'I undertook a project centered on leveraging Natural Language Processing (NLP) to address the task of summarizing interconnected documents.',
+      'By utilizing Python and libraries such as NLTK, I developed algorithms that could comprehend and condense the content while retaining its essential meaning.',
+      'This tool had potential applications in various domains, including creating insightful summaries of articles on specific subjects.',
+      'Tech Stack: Python, NLP, Tensorflow.',
+    ],
+  },
+];
+
+const technologies = [
+  {
+    name: 'Python',
+    icon: python,
+  },
+  {
+    name: 'Java',
+    icon: java,
+  },
+  {
+    name: 'SQL',
+    icon: mysql,
+  },
+  {
+    name: 'JavaScript',
+    icon: javascript,
+  },
+  {
+    name: 'React',
+    icon: reactjs,
+  },
+  {
+    name: 'Tailwind CSS',
+    icon: tailwind,
+  },
+  {
+    name: 'Spring Boot',
+    icon: springboot,
+  },
+  {
+    name: 'Ansible',
+    icon: ansible,
+  },
+  {
+    name: 'Jenkins',
+    icon: jenkins,
+  },
+  {
+    name: 'Docker',
+    icon: docker,
+  },
+  {
+    name: 'Kubernetes',
+    icon: k8,
+  },
+  {
+    name: 'Git',
+    icon: git,
+  },
+  {
+    name: 'Linux',
+    icon: linux,
+  },
+];
+
+const projects = [
+  {
+    name: 'Calendar Reader & Scheduler Automation',
+    description:
+      'Designed and built a backend-driven application that reads calendar data and exposes DAY, WEEK, and MONTH APIs, automatically grouping schedules by meeting types. Integrated with Jenkins cron jobs to trigger APIs based on business-day logic.',
+    tags: [
+      { name: 'Spring Boot', color: 'blue-text-gradient' },
+      { name: 'REST APIs', color: 'green-text-gradient' },
+      { name: 'Jenkins', color: 'pink-text-gradient' },
+      { name: 'Cron', color: 'red-text-gradient' },
+    ],
+    icon: CalendarClock,
+  },
+  {
+    name: 'AI-Powered SQL Query Generator',
+    description:
+      'Built an AI-assisted SQL generation system that dynamically fetches database schema metadata and generates context-aware SQL queries, eliminating hardcoded table definitions and improving accuracy.',
+    tags: [
+      { name: 'Python', color: 'blue-text-gradient' },
+      { name: 'SQL', color: 'green-text-gradient' },
+      { name: 'AI / LLMs', color: 'pink-text-gradient' },
+      { name: 'Backend APIs', color: 'red-text-gradient' },
+    ],
+    icon: DatabaseZap,
+  },
+  {
+    name: 'DEV Environment Setup for QA Automation',
+    description:
+      'Provisioned a dedicated DEV environment from scratch to support QA automation suites, ensuring isolation from development workflows and improving release stability and automation reliability.',
+    tags: [
+      { name: 'Linux', color: 'blue-text-gradient' },
+      { name: 'Ansible', color: 'red-text-gradient' },
+      { name: 'Jenkins', color: 'green-text-gradient' },
+      { name: 'Docker', color: 'pink-text-gradient' },
+    ],
+    icon: ServerCog,
+  },
+  {
+    name: 'RASA-Based Enterprise FAQ Chatbot',
+    description:
+      'Developed and deployed a RASA-powered FAQ chatbot to automate responses for internal teams, integrating structured reports and system documentation as training data.',
+    tags: [
+      { name: 'Python', color: 'blue-text-gradient' },
+      { name: 'RASA', color: 'green-text-gradient' },
+      { name: 'NLP', color: 'pink-text-gradient' },
+      { name: 'CI/CD', color: 'red-text-gradient' },
+    ],
+    icon: MessagesSquare,
+  },
+  {
+    name: 'IBM MQ Migration to CAT Services',
+    description:
+      'Worked on migrating IBM messaging from legacy MQ setup to CAT Services, ensuring compatibility, minimal downtime, and adherence to enterprise integration standards.',
+    tags: [
+      { name: 'Java', color: 'blue-text-gradient' },
+      { name: 'IBM MQ', color: 'green-text-gradient' },
+      { name: 'Spring Boot', color: 'pink-text-gradient' },
+      { name: 'Enterprise Integration', color: 'red-text-gradient' },
+    ],
+    icon: ArrowLeftRight,
+  },
+  {
+    name: 'Crop Yield Prediction using TSA & PGM',
+    description:
+      'Implemented crop yield prediction models using Time Series Analysis and Probabilistic Graphical Models, focusing on agricultural decision-making for the Maharashtra region.',
+    tags: [
+      { name: 'Python', color: 'blue-text-gradient' },
+      { name: 'Time Series Analysis', color: 'green-text-gradient' },
+      { name: 'PGM', color: 'pink-text-gradient' },
+      { name: 'Data Science', color: 'red-text-gradient' },
+    ],
+    icon: ChartLine,
+  },
+];
+
+export { services, technologies, experiences, projects, profileLinks };

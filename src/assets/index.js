@@ -1,44 +1,46 @@
-import logo from "/assets/logo.png";
-import backend from "/assets/backend.png";
-import creator from "/assets/creator.png";
-import mobile from "/assets/mobile.png";
-import web from "/assets/web.png";
-import github from "/assets/github.png";
-import menu from "/assets/menu.svg";
-import close from "/assets/close.svg";
+import logo from '/assets/personal/logo.png';
 
-import hackerrank from '/assets/hackerrank.png'
-import leetcode from '/assets/leetcode.png'
-import kaggle from '/assets/kaggle.png'
-import linkedin from '/assets/linkedin.png'
-import gfg from '/assets/gfg.png'
+import profileImg from '/assets/personal/profile.jpg';
 
-import cpp from "/assets/tech/cpp.png"
-import css from "/assets/tech/css.png";
-import excel from "/assets/tech/excel.png"
-import figma from "/assets/tech/figma.png";
-import git from "/assets/tech/git.png";
-import html from "/assets/tech/html.png";
-import java from "/assets/tech/java.png"
-import javascript from "/assets/tech/javascript.png";
-import mongodb from "/assets/tech/mongodb.png";
-import mysql from "/assets/tech/mysql.png"
-import nodejs from "/assets/tech/nodejs.png";
-import python from "/assets/tech/python.png"
-import reactjs from "/assets/tech/reactjs.png";
-import tailwind from "/assets/tech/tailwind.png";
-import threejs from "/assets/tech/threejs.svg";
+import creator from '/assets/services/creator.png';
+import backend from '/assets/services/backend.png';
+import mobile from '/assets/services/mobile.png';
+import web from '/assets/services/web.png';
 
-import gochanakya from "/assets/company/gochanakya.jpg";
-import suvidha from "/assets/company/suvidha.jpg";
+import menu from '/assets/menu.svg';
+import close from '/assets/close.svg';
 
-import stock from "/assets/stock.png";
-import neural from "/assets/neural.png";
-import customer from "/assets/customer.png";
-import recommendation from "/assets/recommendation.png";
+import github from '/assets/profile/github.png';
+import leetcode from '/assets/profile/leetcode.png';
+import kaggle from '/assets/profile/kaggle.png';
+import linkedin from '/assets/profile/linkedin.png';
+
+import ansible from '/assets/tech/ansible.jpg';
+import cpp from '/assets/tech/cpp.png';
+import docker from '/assets/tech/docker.png';
+import git from '/assets/tech/git.png';
+import java from '/assets/tech/java.png';
+import javascript from '/assets/tech/javascript.png';
+import jenkins from '/assets/tech/jenkins.jpg';
+import k8 from '/assets/tech/k8.jpg';
+import linux from '/assets/tech/linux.png';
+import mysql from '/assets/tech/mysql.png';
+import nodejs from '/assets/tech/nodejs.png';
+import python from '/assets/tech/python.png';
+import reactjs from '/assets/tech/reactjs.png';
+import springboot from '/assets/tech/springboot.jpg';
+import tailwind from '/assets/tech/tailwind.png';
+
+import gochanakya from '/assets/company/gochanakya.jpg';
+import suvidha from '/assets/company/suvidha.jpg';
+import bnp from '/assets/company/bnp.jpg';
+
+import mq from '/assets/projects/arrow-left-right.png';
+import calendar from '/assets/projects/calendar-clock.png';
 
 export {
   logo,
+  profileImg,
   backend,
   creator,
   mobile,
@@ -46,34 +48,27 @@ export {
   github,
   menu,
   close,
-
-  hackerrank,
   leetcode,
   kaggle,
   linkedin,
-  gfg,
-
   cpp,
-  css,
-  excel,
-  figma,
   git,
-  html,
   java,
   javascript,
-  mongodb,
   mysql,
   nodejs,
   python,
   reactjs,
   tailwind,
-  threejs,
-
+  docker,
+  jenkins,
+  k8,
+  springboot,
+  linux,
+  ansible,
   gochanakya,
   suvidha,
-  
-  stock,
-  neural,
-  customer,
-  recommendation
+  bnp,
+  mq,
+  calendar,
 };
